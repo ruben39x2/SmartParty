@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<resources>
+    <string name="app_name">Smart Party</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="calls">Calls</string>
+    <string name="lists">Lists</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="smart_party_version" translatable="false">Smart Party 1.0</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings_profile">Profile</string>
+    <string name="default_status">Starting with Smart Party!</string>
+    <string name="title_activity_about">About</string>
+    <string name="change_username_dialog_title">Change username</string>
+    <string name="ok_dialog">OK</string>
+    <string name="change_status_dialog_title">Change status</string>
+    <string name="username_is">"Username: "</string>
+    <string name="status_is">"Status: "</string>
+    <string name="theme_color_is">Theme color:</string>
+    <string name="something_went_wrong_loading_photo">Something went wrong</string>
+    <string name="profile_photo">"Profile photo: "</string>
+    <string name="default_photo_date">never updated</string>
+    <string name="text_settings_service">Service</string>
+    <string name="exhaustive_scan">Perform exhaustive scan</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_activity_calls">Calls</string>
+    <string name="image_small">Image size is too small</string>
+    <string name="photo_updated_successfully">Photo updated successfully</string>
+    <string name="show_notifications_when_known_users_appear">New user connects to WiFi</string>
+    <string name="show_notifications_when_missed_call">Missed calls</string>
+    <string name="example_status">This is my status!</string>
+    <string name="example_username">My username</string>
+    <string name="unexpected_error">Something unexpected happened :O</string>
+    <string name="title_activity_list_manager">Lists and privacy</string>
+    <string name="you_dont_have_lists">You don\'t have configured any list yet!</string>
+    <string name="everyone_text">Everyone else</string>
+    <string name="special_list">This is a special list that represents all the Smart Party users not included in your own lists. Making this list active, allows any unknown user to know your presence</string>
+    <string name="hint_add_list">People from gym</string>
+    <string name="add_list_dialog_title">Add list</string>
+    <string name="status_dialog_text">Put here a short message that other users will see</string>
+    <string name="list_text_dialog">The name of a list usually represents a group of friends</string>
+    <string name="title_activity_list">List</string>
+    <string name="empty_list">This list is empty</string>
+    <string name="delete_user_dialog_title">Delete user</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_sure_want_to_delete_the_user">"Are you sure you want to delete the user "</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_want_to_delete_list">"Are you sure you want to delete the list "</string>
+    <string name="delete_list_dialog_title">Delete list</string>
+    <string name="question1">What is Smart Party?</string>
+    <string name="answer1">It\'s a meeting room of nearby users based on Voice-over-IP. It means that you can make voice calls to the users connected to the same network.</string>
+    <string name="question3">And what about privacy?</string>
+    <string name="answer3">You can configure different \'lists\' that act like filters. Only the users included in checked lists will be able to see you and make voice calls to you as long as you are both connected to the same WiFi.</string>
+    <string name="answer5">Every user has one unique ID. You need to see your friends connected to know their ID and store it. Don\'t panic, this process is automatic.</string>
+    <string name="question5">Why I can\'t add someone to a list without seeing them connected?</string>
+    <string name="question2">If I lock my device, I don\'t receive calls.</string>
+    <string name="answer2">You probably need to turn off the battery saving in the phone settings.</string>
+    <string name="question6">Can I text someone?</string>
+    <string name="answer6">No. Smart Party only allows voice calls.</string>
+    <string name="question8">I can\'t see other people! What happens?</string>
+    <string name="answer8">Try to check the "exhaustive scan" option in settings. This will make Smart Party scan a larger range of IP addresses. Also, make sure that you are in a IPv4 environment and connections between hosts in your network are allowed. Contact the network administrator if you don\'t know what does this mean.</string>
+    <string name="are_you_sure_want_to_stop_service">Are you sure you want to stop the background Smart Party Service? If you do so, your device won\'t discover any other devices and won\'t receive calls</string>
+    <string name="stop_service_dialog_title">Stop service</string>
+    <string name="stop_service">Stop service</string>
+    <string name="start_service">Start service</string>
+    <string name="discovery_service_disabled"><![CDATA[Discovery service is disabled. If you want to discover other users, please go to Settings > Start service]]></string>
+    <string name="popup_menu_add_to_list">Add to list</string>
+    <string name="was_successfully_added_to">" was added to "</string>
+    <string name="is_already_in">" is already in "</string>
+    <string name="hello_was_said_to">"'Hello' was said to "</string>
+    <string name="someone_says_hello">" says hello!"</string>
+    <string name="remove_user_dialog_title">Remove user</string>
+    <string name="remove_user_dialog_text">" is not reachable. This may be caused because the user has disconnected and is no longer joined to the room. Do you want to remove it?"</string>
+    <string name="local_room">Local Room</string>
+    <string name="new_user_connected">New user connected to the room!</string>
+    <string name="you_cannot_call_yourself">You cannot call yourself</string>
+    <string name="title_activity_in_call">In Call</string>
+    <string name="hang_up">Hang up</string>
+    <string name="add_participant">Add participant</string>
+    <string name="accept_call">Accept</string>
+    <string name="reject_call">Reject</string>
+    <string name="speaker_on">Speaker is On</string>
+    <string name="speaker_off">Speaker is Off</string>
+    <string name="silence_on">Microphone is Off</string>
+    <string name="silence_off">Microphone is On</string>
+    <string name="incoming_call">Incoming call</string>
+    <string name="connecting">Connecting</string>
+    <string name="call_established">Call established</string>
+    <string name="not_possible_to_add_participant">Not possible now</string>
+    <string name="call_participant">Call</string>
+    <string name="there_are_no_calls">There are no calls</string>
+    <string name="say_hello">Say hello</string>
+    <string name="toast_not_possible_to_add_more_users">There are no other users in the room</string>
+    <string name="called_you">" called you"</string>
+    <string name="ongoing_call">Ongoing call</string>
+    <string name="trying">Trying</string>
+    <string name="finished_the_call">" finished the call"</string>
+    <string name="no_users_in_room">Sorry! There are no other users in this room</string>
+    <string name="not_connected_to_service">Couldn\'t connect to background service</string>
+    <string name="general_error">A general error happened. The background service is not working properly. Maybe another app is interfering with Smart Party</string>
+    <string name="old_device_doesnt_support_calls">This user has an old device and doesn\'t support audio calls</string>
+    <string name="logs">Logs</string>
+    <string name="didnt_join_the_call">" didn't join the call"</string>
+    <string name="default_name" translatable="false">0-Default</string>
+    <string name="not_connected_to_wifi">You are not connected to any WiFi</string>
+    <string name="only_who_started_can_add">Only who started the call can add participants</string>
+    <string name="pls_configure_username">Please, configure your username</string>
+    <string name="that_user_has_not_configured_name">Sorry, that user has not configured a valid name yet!</string>
+    <string name="question_rate">Can I rate this app?</string>
+    <string name="answer_rate">Sure. Click here :)</string>
+    <string name="calling">"Calling "</string>
+    <string name="logs_deleted">Logs have been deleted</string>
+    <string name="question7">I changed my profile data but my friends can\'t see it. Why?</string>
+    <string name="answer7">Hit the refresh button.</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="please_introduce_username">Please, introduce your username</string>
+    <string name="list_all">All</string>
+    <string name="title_activity_configuration">Configuration</string>
+    <string name="title_activity_profile">My Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="menu_add_list">Add list</string>
+    <string name="there_was_an_error_pls_restart_service">There was an error. Try restarting the service</string>
+    <string name="please_configure_tag">Please, configure a tag for your friend. You will see this tag associated with your friend even if their name change</string>
+    <string name="hint_tag">Big John</string>
+    <string name="configure_tag_dialog_title">Configure tag</string>
+    <string name="that_list_exists">That list already exists!</string>
+    <string name="invalid_list_name">Invalid list name</string>
+    <string name="performing_scan">Performing scan…</string>
+    <string name="list_favorites">Favorites</string>
+    <string name="create_new_list">Create new list…</string>
+    <string name="create_list_dialog_title">Create new list</string>
+    <string name="it_seems_that_none_of_your_friends_in">Ops! It seems that none of your friends inside \'</string>
+    <string name="is_now_connected_click_here"><![CDATA[\' is now connected. <font color=blue>Click here</font> if you want to configure your lists and privacy]]></string>
+    <string name="explanation_adding_users"><![CDATA[If you want to add an user to a list, you need to see them connected. <font color=blue>Why?</font>]]></string>
+    <string name="got_it">Got it!</string>
+    <string name="lists_explanation">"Lists allow you to keep your friends organized and to decide who can see you. If you 'check' one list, you will be visible to those users. If you 'uncheck' it... They won't see you! "</string>
+    <string name="answer4">Wait to see them connected and click the \'Add to list\' button.</string>
+    <string name="question4">How can I add an user to a list?</string>
+</resources>

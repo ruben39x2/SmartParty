@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+
+<android.support.v7.widget.CardView
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card_call_relative_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_call_type"
+            android:padding="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_call_peers"
+            android:padding="2dp"
+            android:layout_toRightOf="@id/image_call_type"
+            android:layout_toEndOf="@id/image_call_type"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_call_duration"
+            android:padding="2dp"
+            android:layout_below="@id/text_call_peers"
+            android:layout_toRightOf="@id/image_call_type"
+            android:layout_toEndOf="@id/image_call_type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_call_date"
+            android:padding="2dp"
+            android:layout_below="@id/text_call_duration"
+            android:layout_toRightOf="@id/image_call_type"
+            android:layout_toEndOf="@id/image_call_type"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

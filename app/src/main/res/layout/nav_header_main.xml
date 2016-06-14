@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/nav_header_height"
+              android:orientation="vertical"
+              android:gravity="bottom"
+              android:id="@+id/layout_nav_header">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_background_nav_header"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_edit"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="7dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickEditProfile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_nav_status"
+        android:layout_alignParentBottom="true"
+        android:padding="18dp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_nav_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:padding="18dp"
+        android:layout_above="@id/text_nav_status"
+        android:textColor="@color/colorWhite"/>
+
+
+
+</RelativeLayout>

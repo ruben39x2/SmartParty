@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="es.udc.fic.tfg.smartparty.activity.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/card_profile"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/text_profile_settings"
+                    android:text="@string/settings_profile"
+                    android:padding="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/divider0"
+                    android:background="?android:attr/dividerHorizontal"
+                    android:layout_below="@id/text_profile_settings"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_settings_photo"
+                    android:padding="10dp"
+                    android:layout_below="@id/divider0"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_edit_photo"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_alignTop="@id/text_settings_photo"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="4dp"
+                    android:onClick="onClickChangePhoto"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/divider1"
+                    android:background="?android:attr/dividerHorizontal"
+                    android:layout_below="@id/text_settings_photo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_name"
+                    android:padding="10dp"
+                    android:layout_below="@id/divider1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_edit_name"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_alignTop="@id/text_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="4dp"
+                    android:onClick="onClickChangeUsername"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/divider2"
+                    android:background="?android:attr/dividerHorizontal"
+                    android:layout_below="@id/text_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_settings_status"
+                    android:padding="10dp"
+                    android:layout_below="@id/divider2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_edit_status"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_alignTop="@id/text_settings_status"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="4dp"
+                    android:onClick="onClickChangeStatus"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/divider3"
+                    android:background="?android:attr/dividerHorizontal"
+                    android:layout_below="@id/text_settings_status"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="26"
+                    android:id="@+id/text_settings_theme"
+                    android:padding="10dp"
+                    android:text="@string/theme_color_is"
+                    android:layout_below="@id/divider3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/red_seek_bar"
+                    android:layout_below="@id/text_settings_theme"
+                    android:max="180"
+                    android:maxHeight="3dip"
+                    android:minHeight="3dip"
+                    android:padding="5dp"
+                    android:progressDrawable="@drawable/gradient_red"
+                    android:thumbTint="@color/colorRed"/>
+
+                <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/green_seek_bar"
+                    android:layout_below="@id/red_seek_bar"
+                    android:max="180"
+                    android:maxHeight="3dip"
+                    android:minHeight="3dip"
+                    android:padding="5dp"
+                    android:progressDrawable="@drawable/gradient_green"
+                    android:thumbTint="@color/colorGreen"/>
+
+                <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blue_seek_bar"
+                    android:layout_below="@id/green_seek_bar"
+                    android:max="180"
+                    android:maxHeight="3dip"
+                    android:minHeight="3dip"
+                    android:padding="5dp"
+                    android:progressDrawable="@drawable/gradient_blue"
+                    android:thumbTint="@color/colorBlue"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

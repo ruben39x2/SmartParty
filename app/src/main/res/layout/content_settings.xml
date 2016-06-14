@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_settings"
+    tools:context="es.udc.fic.tfg.smartparty.activity.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/card_notifications"
+            app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/text_notifications_settings"
+                android:text="@string/notifications"
+                android:padding="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:id="@+id/divider5"
+                android:background="?android:attr/dividerHorizontal"
+                android:layout_below="@id/text_notifications_settings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_settings_notif_user"
+                android:text="@string/show_notifications_when_known_users_appear"
+                android:padding="10dp"
+                android:layout_below="@id/divider5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox_notify_new_user"
+                android:layout_alignTop="@id/text_settings_notif_user"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:onClick="onClickChangeCheckBox"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:id="@+id/divider6"
+                android:background="?android:attr/dividerHorizontal"
+                android:layout_below="@id/text_settings_notif_user"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_settings_notif_missedcall"
+                android:text="@string/show_notifications_when_missed_call"
+                android:padding="10dp"
+                android:layout_below="@id/divider6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox_notify_missedcall"
+                android:layout_alignTop="@id/text_settings_notif_missedcall"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:onClick="onClickChangeCheckBox"/>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/card_service"
+            app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/text_service_settings"
+                android:text="@string/text_settings_service"
+                android:padding="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:id="@+id/divider4"
+                android:background="?android:attr/dividerHorizontal"
+                android:layout_below="@id/text_service_settings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_settings_exhaustive_scan"
+                android:padding="10dp"
+                android:text="@string/exhaustive_scan"
+                android:layout_below="@id/divider4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox_exhaustive_scan"
+                android:layout_alignTop="@id/text_settings_exhaustive_scan"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:onClick="onClickChangeCheckBox"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:id="@+id/divider9"
+                android:background="?android:attr/dividerHorizontal"
+                android:layout_below="@id/text_settings_exhaustive_scan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_log"
+                android:text="@string/logs"
+                android:padding="10dp"
+                android:layout_below="@id/divider9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonViewLog"
+                android:src="@drawable/ic_menu_view"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_alignTop="@id/text_view_log"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:onClick="onClickViewLog"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonDeleteLog"
+                android:src="@drawable/ic_menu_delete"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_alignTop="@id/text_view_log"
+                android:layout_toLeftOf="@id/buttonViewLog"
+                android:layout_toStartOf="@id/buttonViewLog"
+                android:layout_margin="4dp"
+                android:onClick="onClickDeleteLog"/>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_service"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onClickService"/>
+
+    </LinearLayout>
+</ScrollView>

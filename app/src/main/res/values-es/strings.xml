@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<resources>
+    <string name="app_name">Smart Party</string>
+    <string name="about">Acerca de</string>
+    <string name="accept_call">Aceptar</string>
+    <string name="add_list_dialog_title">Añadir lista</string>
+    <string name="add_participant">Añadir participante</string>
+    <string name="answer1">Es una sala de reunión de usuarios cercanos basada en Voz-sobre-IP. Significa que puedes hacer llamadas de voz a usuarios conectados en la misma red.</string>
+    <string name="answer3">Puedes configurar diferentes \'listas\' que actúan como filtros. Sólo los usuarios incluidos en las listas marcadas podrán verte y llamarte, siempre que ambos estéis conectados a la misma WiFi.</string>
+    <string name="answer5">Todos los usuarios tienen un ID único. Tienes que ver a tus amigos conectados para saber su ID y guardarlo. No te asustes, este proceso es automático.</string>
+    <string name="answer4">Espera a verlo conectado y haz click en el botón \'Añadir a lista\'.</string>
+    <string name="answer2">Quizá necesites desactivar el modo ahorro de energía en los ajustes del teléfono.</string>
+    <string name="answer6">No. Smart Party sólo permite llamadas de voz.</string>
+    <string name="are_you_sure_want_to_delete_list">"¿Seguro que quieres borrar la lista "</string>
+    <string name="are_you_sure_want_to_delete_the_user">"¿Seguro que quieres borrar el usuario "</string>
+    <string name="are_you_sure_want_to_stop_service">¿Seguro que quieres detener el servicio de Smart Party? Si lo haces, no podrás descubrir otros dispositivos ni recibir llamadas</string>
+    <string name="call_established">Llamada establecida</string>
+    <string name="call_participant">Llamar</string>
+    <string name="called_you">" te ha(n) llamado"</string>
+    <string name="calls">Llamadas</string>
+    <string name="change_status_dialog_title">Cambiar estado</string>
+    <string name="change_username_dialog_title">Cambiar nombre </string>
+    <string name="connecting">Conectando</string>
+    <string name="default_photo_date">nunca actualizado</string>
+    <string name="default_status">¡Estoy usando Smart Party!</string>
+    <string name="delete_list_dialog_title">Eliminar lista</string>
+    <string name="delete_user_dialog_title">Eliminar usuario</string>
+    <string name="didnt_join_the_call">" no se unió a la llamada"</string>
+    <string name="discovery_service_disabled"><![CDATA[Servicio deshabilitado. Si quieres descubrir a otros usuarios, por favor, ve a Ajustes > Iniciar servicio]]></string>
+    <string name="empty_list">Esta lista está vacía</string>
+    <string name="everyone_text">Todos los demás</string>
+    <string name="example_status">Estoy estudiando duramente</string>
+    <string name="example_username">Mi nombre</string>
+    <string name="finished_the_call">" terminó la llamada"</string>
+    <string name="general_error">Ha ocurrido un error general. El servicio en segundo plano no está funcionando adecuadamente. Quizá otra aplicación está interfiriendo con Smart Party</string>
+    <string name="hang_up">Colgar</string>
+    <string name="hello_was_said_to">"Dijiste \'Hola\' a "</string>
+    <string name="hint_add_list">Gente del gimnasio</string>
+    <string name="image_small">El tamaño de la imagen es muy pequeño</string>
+    <string name="incoming_call">Llamada entrante</string>
+    <string name="is_already_in">" ya está en "</string>
+    <string name="list_text_dialog">El nombre de una lista suele representar a un grupo de amigos</string>
+    <string name="lists">Listas</string>
+    <string name="local_room">Sala Local</string>
+    <string name="logs">Logs</string>
+    <string name="navigation_drawer_close">Cerrar navigation drawer</string>
+    <string name="navigation_drawer_open">Abrir navigation drawer</string>
+    <string name="new_user_connected">Un nuevo usuario se ha unido a la sala</string>
+    <string name="no">No</string>
+    <string name="no_users_in_room">¡Lo sentimos! No hay otros usuarios en esta sala</string>
+    <string name="not_connected_to_service">No se pudo conectar al servicio en segundo plano</string>
+    <string name="not_possible_to_add_participant">No se puede ahora</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="ok_dialog">Ok</string>
+    <string name="old_device_doesnt_support_calls">Este usuario tiene un dispositivo antiguo y no soporta llamadas de audio</string>
+    <string name="ongoing_call">Llamada en curso</string>
+    <string name="photo_updated_successfully">Imagen actualizada con éxito</string>
+    <string name="popup_menu_add_to_list">Añadir a lista</string>
+    <string name="profile_photo">"Imagen de perfil: "</string>
+    <string name="question1">¿Qué es Smart Party?</string>
+    <string name="question3">¿Qué hay de la privacidad?</string>
+    <string name="question5">¿Por qué no puedo añadir alguien a una lista sin verlo conectado?</string>
+    <string name="question4">¿Cómo añado un usuario a una lista?</string>
+    <string name="question2">Si bloqueo mi dispositivo, no recibo llamadas.</string>
+    <string name="question6">¿Puedo enviar mensajes de texto?</string>
+    <string name="reject_call">Rechazar</string>
+    <string name="remove_user_dialog_text">" no es alcanzable. Esto puede deberse a que el usuario se ha desconectado y ya no está en esta sala. ¿Quieres eliminarlo?"</string>
+    <string name="remove_user_dialog_title">Eliminar usuario</string>
+    <string name="say_hello">Decir hola</string>
+    <string name="settings">Ajustes</string>
+    <string name="settings_profile">Perfil</string>
+    <string name="show_notifications_when_known_users_appear">Nuevo usuario se conecta</string>
+    <string name="show_notifications_when_missed_call">Llamadas perdidas</string>
+    <string name="silence_off">Micrófono encendido</string>
+    <string name="silence_on">Micrófono apagado</string>
+    <string name="something_went_wrong_loading_photo">Algo ha ido mal</string>
+    <string name="speaker_off">Altavoz apagado</string>
+    <string name="speaker_on">Altavoz encendido</string>
+    <string name="special_list">Esta es una lista especial que representa a todos los usuarios de Smart Party no incluidos en tus propias listas. Activando esta lista, permites a cualquier usuario desconocido conocer tu presencia</string>
+    <string name="start_service">Iniciar servicio</string>
+    <string name="exhaustive_scan">Escaneo exhaustivo</string>
+    <string name="status_dialog_text">Pon aquí un mensaje corto que otros usuarios podrán ver</string>
+    <string name="status_is">"Estado: "</string>
+    <string name="stop_service">Detener servicio</string>
+    <string name="stop_service_dialog_title">Detener servicio</string>
+    <string name="text_settings_service">Servicio</string>
+    <string name="theme_color_is">Color del tema:</string>
+    <string name="there_are_no_calls">No hay llamadas</string>
+    <string name="title_activity_about">Acerca de</string>
+    <string name="title_activity_calls">Llamadas</string>
+    <string name="title_activity_in_call">En llamada</string>
+    <string name="title_activity_list">Lista</string>
+    <string name="title_activity_list_manager">Listas y privacidad</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="toast_not_possible_to_add_more_users">No hay más usuarios en la sala</string>
+    <string name="trying">Intentando</string>
+    <string name="unexpected_error">Algo inesperado ocurrió :O</string>
+    <string name="username_is">"Nombre: "</string>
+    <string name="was_successfully_added_to">" se añadió a "</string>
+    <string name="yes">Sí</string>
+    <string name="you_cannot_call_yourself">No te puedes llamar a ti mismo</string>
+    <string name="you_dont_have_lists">No has configurado ninguna lista todavía</string>
+    <string name="someone_says_hello">" dice hola"</string>
+    <string name="not_connected_to_wifi">No estás conectado a ninguna red WiFi</string>
+    <string name="only_who_started_can_add">Solo quien inició la llamada puede añadir usuarios</string>
+    <string name="pls_configure_username">Por favor, configura un nombre de usuario</string>
+    <string name="that_user_has_not_configured_name">Lo sentimos, parece que ese usuario no ha configurado un nombre valido todavía</string>
+    <string name="answer8">Prueba a marcar la opción de "escaneo exhaustivo" en los ajustes. Esto hará que Smart Party escanee un rango más grande de direcciones IP. Además, asegúrate de estar en un entorno IPv4 y de que las conexiones entre nodos de tu red están permitidas. Contacta con el administrador de la red si no sabes qué significa esto.</string>
+    <string name="question8">¡No puedo ver a nadie! ¿Qué pasa?</string>
+    <string name="answer_rate">Por supuesto. Haz click aquí :)</string>
+    <string name="question_rate">¿Puedo valorar esta app?</string>
+    <string name="calling">"Llamando a "</string>
+    <string name="logs_deleted">Logs borrados</string>
+    <string name="question7">He cambiado mi información de perfil pero mis amigos no lo ven. ¿Por qué?</string>
+    <string name="answer7">Pulsa el botón de actualizar.</string>
+    <string name="menu_refresh">Actualizar</string>
+    <string name="please_introduce_username">Por favor, introduce tu nombre de usuario</string>
+    <string name="list_all">Todos</string>
+    <string name="my_profile">Mi Perfil</string>
+    <string name="title_activity_configuration">Configuración</string>
+    <string name="title_activity_profile">Mi Perfil</string>
+    <string name="menu_add_list">Añadir lista</string>
+    <string name="there_was_an_error_pls_restart_service">Ha habido un error. Prueba a reiniciar el servicio</string>
+    <string name="please_configure_tag">Por favor, configura una etiqueta. En el futuro verás esta etiqueta asociada a tu amigo incluso si cambia su nombre</string>
+    <string name="hint_tag">Maestro</string>
+    <string name="configure_tag_dialog_title">Configurar etiqueta</string>
+    <string name="invalid_list_name">Nombre de lista no válido</string>
+    <string name="that_list_exists">¡Esa lista ya existe!</string>
+    <string name="performing_scan">Buscando usuarios…</string>
+    <string name="create_list_dialog_title">Crear nueva lista</string>
+    <string name="create_new_list">Crear nueva lista…</string>
+    <string name="list_favorites">Favoritos</string>
+    <string name="explanation_adding_users"><![CDATA[Si quieres añadir un usuario a una lista, tienes que verlo conectado. <font color=blue>¿Por qué?</font>]]></string>
+    <string name="got_it">Vale</string>
+    <string name="is_now_connected_click_here"><![CDATA[\' está conectado. <font color=blue>Haz click aquí</font> si quieres configurar tus listas y privacidad]]></string>
+    <string name="it_seems_that_none_of_your_friends_in">¡Ups! Parece que ninguno de tus amigos de \'</string>
+    <string name="lists_explanation">"Las listas te permiten mantener a tus amigos organizados y decidir quién puede verte. Si \'activas\' una lista, serás visible para esos usuarios. Si la \'desactivas\'… ¡No podrán verte!"</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/lists"
+          android:id="@+id/submenu_1">
+        <menu>
+            <item
+                android:id="@+id/nav_list"
+                android:title="@string/list_all"
+                android:icon="@drawable/ic_menu_cc_am"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/settings"
+          android:id="@+id/submenu_2">
+        <menu>
+            <item
+                android:id="@+id/nav_configuration"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/title_activity_configuration"/>
+        </menu>
+    </item>
+</menu>

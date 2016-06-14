@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Copyright 2016 Rubén Montero Vázquez
+
+ This file is part of Smart Party.
+
+ Smart Party is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Smart Party is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Smart Party.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="es.udc.fic.tfg.smartparty.activity.InCallActivity"
+    tools:showIn="@layout/activity_in_call">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image_peer"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept_call"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/gradient_green"
+        android:textColor="@android:color/white"
+        android:id="@+id/button_accept_call"
+        android:visibility="invisible"
+        android:onClick="onAcceptCall"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reject_call"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/gradient_red"
+        android:textColor="@android:color/white"
+        android:id="@+id/button_reject_call"
+        android:visibility="invisible"
+        android:onClick="onRejectCall"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hang_up"
+        android:id="@+id/button_hangup"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="4dp"
+        android:onClick="onClickHangup"
+        android:visibility="invisible"
+        android:background="@drawable/gradient_red"
+        android:textColor="@android:color/white"/>
+
+    <ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:id="@+id/button_speaker"
+        android:padding="4dp"
+        android:textOn="@string/speaker_on"
+        android:textOff="@string/speaker_off"
+        android:background="@drawable/gradient_grey"
+        android:layout_above="@id/button_hangup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="onClickToggleSpeaker"
+        android:visibility="invisible"/>
+
+    <ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:id="@+id/button_silence"
+        android:padding="4dp"
+        android:textOn="@string/silence_on"
+        android:textOff="@string/silence_off"
+        android:background="@drawable/gradient_grey"
+        android:layout_above="@id/button_hangup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="onClickToggleSilence"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/button_add_participant"
+        android:drawableTop="@android:drawable/ic_menu_call"
+        android:padding="4dp"
+        android:text="@string/add_participant"
+        android:background="@drawable/gradient_grey"
+        android:layout_above="@id/button_hangup"
+        android:layout_toLeftOf="@id/button_silence"
+        android:layout_toStartOf="@id/button_silence"
+        android:layout_toRightOf="@id/button_speaker"
+        android:layout_toEndOf="@id/button_speaker"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible"
+        android:onClick="onClickAddParticipant"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:id="@+id/layout_in_call"
+        android:alpha="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_call_status"
+            android:textColor="@android:color/white"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_time"
+            android:text="00:00"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_peer"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@id/text_call_status"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
